@@ -31,14 +31,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //定义属性
-   
     
+
+     NSLog(@"apl>>>%f",self.view.alpha);
     
     self.userNameInfo.text=[NSMutableDictionary dictionaryWithContentsOfFile:Filepath][@"account"];
     self.userPasswordInfo.text=[NSMutableDictionary dictionaryWithContentsOfFile:Filepath][@"password"];
     
 
-    
+
+
     
     
     
@@ -66,7 +68,7 @@
 //    [self.view addSubview:_userSid];
 //    [self.view addSubview:_userSIDInfo];
 //    
-//    
+    
 
 }
 
@@ -76,7 +78,7 @@
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {NSLog(@"tag>>>%ld:%@",textField.tag,textField.text);
     if ([_userNameInfo.text isEqual: @"penghui"] &&[[_userPasswordInfo.text stringByAppendingString:string] isEqual:@"feng"]) {
-        _headPortrait.image=[UIImage imageNamed:@"jing.jpg"];
+       _headPortrait.image=[UIImage imageNamed:@"jing.jpg"];
         
     }else{_headPortrait.image=NULL; }
     return YES;
@@ -92,7 +94,7 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.userNameInfo resignFirstResponder];
     [self.userPasswordInfo resignFirstResponder];
-
+  
 }
 //退出！！！！！！
 - (IBAction)exit:(UIButton *)sender {
@@ -111,6 +113,9 @@
     UIStoryboard*mainSB=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     loginViewController *registview=[mainSB instantiateViewControllerWithIdentifier:@"register"];
     [self presentViewController:registview animated:YES completion:^{NSLog(@"打开注册界面！！！");}];
+    
+    
+   
     
 }
 

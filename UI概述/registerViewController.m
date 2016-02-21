@@ -7,6 +7,7 @@
 //
 
 #import "registerViewController.h"
+#import "PHnet.h"
 #define Filepath @"/Users/qingyun/Desktop/彭辉/UI概述/userinformation.plist"
 @interface registerViewController ()
 
@@ -201,6 +202,19 @@
     [_plist writeToFile:Filepath atomically:YES];
      [self Backlogin];
 
+}
+
+
+//
+- (IBAction)net:(id)sender {
+    PHnet *net=[[PHnet alloc]init];
+    [self presentViewController:net animated:YES completion:^{
+        NSLog(@"上网！！！！");
+    }];
+    
+    
+    
+    
 }
 -(void)Backlogin{
     UIStoryboard *mainSB=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];

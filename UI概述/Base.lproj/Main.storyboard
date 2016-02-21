@@ -102,12 +102,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gci-25-hmM">
-                                <rect key="frame" x="42" y="38" width="30" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angry_00.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QcQ-GM-k16">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <animations/>
-                                <state key="normal" title="Quit"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gci-25-hmM">
+                                <rect key="frame" x="20" y="42" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Quit">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="quit:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="IcK-mH-Mgo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sf-fc-gYc">
+                                <rect key="frame" x="306" y="42" width="59" height="30"/>
+                                <animations/>
+                                <state key="normal" title="loginout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginout:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="CGP-cE-mkI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RL-Rb-ZNb">
+                                <rect key="frame" x="20" y="366" width="62" height="60"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="cymbal.png"/>
+                                <connections>
+                                    <action selector="cymbal:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="3Wi-eE-oFu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTb-ei-oYM">
+                                <rect key="frame" x="20" y="489" width="62" height="60"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="drink.png"/>
+                                <connections>
+                                    <action selector="drink:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="Gdl-eH-jPu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc7-LY-Ud9">
+                                <rect key="frame" x="20" y="604" width="62" height="60"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="eat.png"/>
+                                <connections>
+                                    <action selector="eat:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="g5f-ls-Qfs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2B-yr-oOz">
+                                <rect key="frame" x="322" y="366" width="62" height="60"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="fart.png"/>
+                                <connections>
+                                    <action selector="fart:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="k19-KT-wGe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkV-UD-7fW">
+                                <rect key="frame" x="322" y="489" width="62" height="60"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="pie.png"/>
+                                <connections>
+                                    <action selector="pie:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="BbW-Yn-MUc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq2-8g-dVd">
+                                <rect key="frame" x="322" y="604" width="62" height="60"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="scratch.png"/>
+                                <connections>
+                                    <action selector="scratch:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="HWq-F5-hb1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pC-yU-8PG">
+                                <rect key="frame" x="167" y="131" width="92" height="57"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="knockout:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="eMs-Ei-Xsc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyx-11-QQe">
+                                <rect key="frame" x="161" y="507" width="92" height="132"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="angry:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="qZY-Cv-yKp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOh-SQ-fqt">
+                                <rect key="frame" x="216" y="678" width="57" height="28"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="footleft:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="A3E-8k-Bsk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3H-FC-z4K">
+                                <rect key="frame" x="151" y="678" width="57" height="28"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="footright:" destination="Tiy-Ca-TK9" eventType="touchUpInside" id="c6u-RO-QCd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -115,6 +207,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tomCatImage" destination="QcQ-GM-k16" id="jan-CR-hOh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ocn-3c-rzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,7 +270,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5l-w3-MD8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d5l-w3-MD8">
                                 <rect key="frame" x="184" y="52" width="143" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -254,6 +349,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7d-Fb-ZCn">
+                                <rect key="frame" x="174" y="525" width="66" height="30"/>
+                                <animations/>
+                                <state key="normal" title="browser"/>
+                                <connections>
+                                    <action selector="net:" destination="80i-hY-QL8" eventType="touchUpInside" id="FAo-Qj-q53"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -272,7 +375,6 @@
                             <constraint firstItem="UsH-Wi-gNW" firstAttribute="leading" secondItem="adU-ka-a0Y" secondAttribute="trailing" constant="24" id="YAh-Rn-lWX"/>
                             <constraint firstItem="d5l-w3-MD8" firstAttribute="trailing" secondItem="PdP-kD-rHq" secondAttribute="trailing" id="Zzm-H7-CYf"/>
                             <constraint firstItem="d5l-w3-MD8" firstAttribute="trailing" secondItem="UsH-Wi-gNW" secondAttribute="trailing" id="cnT-hE-Rpb"/>
-                            <constraint firstItem="d5l-w3-MD8" firstAttribute="top" secondItem="Rxf-GF-6jU" secondAttribute="bottom" constant="32" id="exP-12-z0O"/>
                             <constraint firstItem="UsH-Wi-gNW" firstAttribute="top" secondItem="wgX-ai-5C0" secondAttribute="bottom" constant="8" symbolic="YES" id="fCL-1R-Wwd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="d5l-w3-MD8" secondAttribute="trailing" constant="67" id="h8F-sO-z0K"/>
                             <constraint firstItem="d5l-w3-MD8" firstAttribute="trailing" secondItem="xsv-FX-pFC" secondAttribute="trailing" id="jdX-RW-7ta"/>
@@ -282,6 +384,7 @@
                             <constraint firstItem="xsv-FX-pFC" firstAttribute="top" secondItem="UsH-Wi-gNW" secondAttribute="bottom" constant="13" id="qCa-G6-11x"/>
                             <constraint firstItem="d5l-w3-MD8" firstAttribute="leading" secondItem="UsH-Wi-gNW" secondAttribute="leading" id="qFI-J6-cCx"/>
                             <constraint firstItem="UdE-C9-h3r" firstAttribute="top" secondItem="rfq-fv-Z1X" secondAttribute="top" constant="260" id="qGB-hT-lrB"/>
+                            <constraint firstItem="d5l-w3-MD8" firstAttribute="top" secondItem="Rxf-GF-6jU" secondAttribute="bottom" constant="32" id="uae-gV-UYz"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -311,4 +414,13 @@
             <point key="canvasLocation" x="977" y="-1316"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="angry_00.jpg" width="640" height="1024"/>
+        <image name="cymbal.png" width="60" height="60"/>
+        <image name="drink.png" width="60" height="60"/>
+        <image name="eat.png" width="60" height="60"/>
+        <image name="fart.png" width="60" height="60"/>
+        <image name="pie.png" width="60" height="60"/>
+        <image name="scratch.png" width="60" height="60"/>
+    </resources>
 </document>
